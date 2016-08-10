@@ -6,6 +6,7 @@ frontend/public/js/*.js
 
 # Config
 discord-bot/settings.json
+.idea
 
 # Logs
 logs
