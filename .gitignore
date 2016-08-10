@@ -1,8 +1,5 @@
 # Compressed
-frontend/public/images
-frontend/public/css/*.css
-!frontend/public/css/normalize.css
-frontend/public/js/*.js
+
 
 # Config
 discord-bot/settings.json
