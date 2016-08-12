@@ -1,0 +1,249 @@
+/*noinspection CssUnknownTarget*/
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400';
+
+#skeleton {
+    display: none !important
+}
+
+h1, h2, h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300
+}
+
+h1 {
+    font-size: 4.20873em;
+    color: #FFF
+}
+
+h2 {
+    line-height: 3rem
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+body {
+    background: #222222;
+}
+
+header {
+    display: block;
+    padding: 25px 30px;
+    background-color: #1E1E1E
+}
+
+body > header h3 {
+    color: #999999;
+    font-size: 2rem
+}
+
+body > header h3 > span {
+    font-size: 1rem
+}
+
+body > section#pokes::after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+body > section#pokes h2 {
+    color: #BFBFBF;
+    font-size: 3.15733em
+}
+
+body > section#pokes > div.description {
+    margin-bottom: 1.77689em
+}
+
+body > section#pokes > div.description > p:first-child {
+    margin-top: 0
+}
+
+body > section#pokes > div.options {
+    margin-bottom: 1.77689em
+}
+
+body > section#pokes > div.options > p {
+    font-weight: bold;
+    margin: 0
+}
+
+body > section#pokes > div.options > label {
+    display: block
+}
+
+body > section#pokes > div.list {
+    width: 100%;
+    display: table;
+    border-collapse: collapse
+}
+
+body > section#pokes > div.list > div.poke {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in
+}
+
+body > section#pokes > div.list > div.poke > div {
+    padding: 10px 20px;
+    display: table-cell;
+    vertical-align: middle;
+    width: auto
+}
+
+body > section#pokes > div.list > div.poke > div.image {
+    width: 60px
+}
+
+body > section#pokes > div.list > div.poke > div.image > img {
+    max-width: 45px
+}
+
+p.coords {
+    cursor: pointer
+}
+
+div.actions {
+    text-align: right
+}
+
+#pokes {
+    padding-top: 2em;
+}
+
+body, .ui.header {
+    color: white;
+}
+
+img.pokemon-image.ui.image.centered {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+footer.container {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background: #1e1e1e;
+    width: 100%;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center
+}
+
+@media only screen and (max-width: 991px) {
+    .ui.container {
+        width: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+.poke.ui.segment.inverted:nth-child(even) {
+    background: rgb(31, 31, 32);
+}
+
+.poke-button-container, .poke-snipe-button-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-right: 0 !important;}
+
+
+.poke-button-container
+{ margin-left: 0!important;}
+
+.coords-container,
+.poke-img-container,
+.poke-name-container {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+
+
+.hide-poke-button, .snipe-poke-button {
+    min-height: 78px !important;
+}
+
+.ui.button.inverted.fluid.hide-poke-button.red, .ui.button.inverted.fluid.snipe-poke-button.green.animated.fade {
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .mobile.hidden,
+    .tablet.only,
+    .computer.only,
+    .large.monitor.only,
+    .widescreen.monitor.only {
+        display: none !important;
+    }
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mobile.only,
+    .tablet.hidden,
+    .computer.only,
+    .large.monitor.only,
+    .widescreen.monitor.only {
+        display: none !important;
+    }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mobile.only,
+    .tablet.only,
+    .computer.hidden,
+    .large.monitor.only,
+    .widescreen.monitor.only {
+        display: none !important;
+    }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    .mobile.only,
+    .tablet.only,
+    .computer.only,
+    .large.monitor.hidden,
+    .widescreen.monitor.only {
+        display: none !important;
+    }
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: 1920px) {
+    .mobile.only,
+    .tablet.only,
+    .computer.only,
+    .large.monitor.only,
+    .widescreen.monitor.hidden  {
+        display: none !important;
+    }
+}
