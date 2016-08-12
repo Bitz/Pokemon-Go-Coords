@@ -155,7 +155,7 @@ bot.on("ready", function() {
 
 // Register socket.io events
 io.on('connection', function(socket) {
-    console.log('+++ Socket connected.');
+    //console.log('+++ Socket connected.');//fucking why log this every 2ms, you cant read debug with this on
 
     // Say hi
     socket.emit('helo', pokelog);
@@ -198,6 +198,11 @@ function parseCoordMessage(text) {
 
     // Remove tabs
     text = text.replace(/\t/g, '').trim();
+
+    // Remove backtick, some bots like fancy formatting, who knows why ;p
+    text = text.replace(/`/g, '').trim();
+
+
 
     // Split on spaces to parse each part individually
     var pieces = text.split(' ');

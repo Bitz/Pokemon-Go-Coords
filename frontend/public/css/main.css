@@ -89,9 +89,6 @@ body > section#pokes > div.list {
 
 body > section#pokes > div.list > div.poke {
     opacity: 0;
-    min-height: 84px;
-    display: table-row;
-    border: 2px solid #e0e0e0;
     -webkit-transition: opacity 0.5s ease-in;
     transition: opacity 0.5s ease-in
 }
@@ -122,4 +119,10 @@ div.actions {
 
 
 #pokes {padding-top: 2em;}
-p {color: #848484;}
+body, .ui.header{color: white;}
+
+img.pokemon-image.ui.image.centered {
+    max-width: 50px;
+    max-height: 50px;
+}
+
